@@ -1,0 +1,50 @@
+@charset "UTF8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background: url(../imagens/2151985515.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;                          /* MAIS USADO PARA AJUSTAR A IMAGEM */
+    
+}
+
+nav>h1{
+    color: white;
+    font-family: cursive;
+    margin: auto;
+    padding: 10px;
+}
+
+div>h1{
+    font-family: cursive;
+    color: white;
+    padding: 20px;
+    font-size: 2.2em;
+}
+
+div>p{
+    color: white;
+}
+
+
+div#formulario{
+    background-color: rgba(130, 76, 26, 0.434) ;
+    color: white;
+    width: 50vw;
+    max-width:100%;
+    margin: auto;
+    border-radius: 10px;
+    border-color:  rgba(246, 168, 0, 0.998);
+    padding: 50px;
+    margin-top: 30px;
+    font-family: cursive;
+
+    backdrop-filter: blur(5px);                 /* isso  é para dar um efeito de desfoque no fundo */
+    -webkit-backdrop-filter: blur(10px);
+}
