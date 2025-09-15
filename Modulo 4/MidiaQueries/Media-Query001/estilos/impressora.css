@@ -1,0 +1,18 @@
+@charsetUTF-8";   
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'courier new',courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+menu{
+    display: none;
+}
+article::after{
+    content: 'este artigo foi produzido pelo Bernardo Arnaldo Sumbane';
+}

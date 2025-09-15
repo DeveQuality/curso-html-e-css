@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        a:hover{
+            background-color: rgb(131, 130, 130);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicou()">Clique aqui</a>
+    <div id="saida"></div>
+
+    <script>
+        function clicou() {
+             s = window.document.getElementById("saida")
+             s.innerHTML += '<p> voce clicou <p>'
+        }
+    </script>
+</body>
+</html>

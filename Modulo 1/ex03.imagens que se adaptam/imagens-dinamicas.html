@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Ao reduzir ou aumentar o tamanha da tela as imangens se adaptam atraves da imagens</p>
+
+            <!-- tag para colocar uma imagen e poder editala -->
+            
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">       <!-- os sorces devem estar em ordem -->
+
+        <source media="(max-width: 1060px)" srcset="imagens/medio.png" type="image/png">     <!-- se a imagem reduzir para -1000px tem que caregar a imagem medio -->
+
+        <img src="imagens/grande.png" alt="imagen flexivel">                                <!-- imagen padrao  -->
+    </picture>
+
+    
+</b>
+</html>

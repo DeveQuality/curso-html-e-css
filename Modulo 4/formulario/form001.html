@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form{
+            margin: auto;
+            height: 200px;
+            width: 400px;
+            background-color: rgb(49, 48, 48);
+            color: white;
+            border-radius: 20px;
+            margin: 10px auto;
+            padding: 20px;
+        }
+        form>p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 20px;
+            font-size: 1.5em;
+            font-size: 1.2em;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando formulario</h1>
+
+    <form  action="submeter.php"  method="post" autocomplete="off" >        <!-- o submeter.php é o arquivo que receberá os dados do formulário -->
+
+        <p>  <label for="inome">Nome</label>                <input type="text" name="nome" id="inome"></p>
+
+        <p>  <label for="isobrenome">sobrenome</label>      <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p> <label for="ipassword" >Password</label>        <input type="password" name="password" id="ipassword"></p>
+
+        <p>  <input type="submit" value="submeter"></p>
+
+               <!-- o metodo post serve para omitir os seus dados na url -->
+    </form>    <!--  o form e util para criar formulários que permitem a interação do usuário com o site, como enviar dados, fazer pesquisas, etc. -->
+
+</body>
+</html>

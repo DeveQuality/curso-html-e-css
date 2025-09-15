@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criando formulario</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cadastro.php"   method="post"> >
+
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" id="inome" name="nome" required placeholder="digite o seu nome"  autocomplete="name">
+        </p>
+
+        <p>
+            <label for="iemail">Email:</label>
+            <input type="email" id="iemail" name="email" required  placeholder="digite o seu e-mail" autocomplete="e-mail">
+        </p>
+
+        <p>
+            <label for="imes">Mes: </label>
+            <input type="month" name="mes" id="imes" required >
+        </p>
+
+        <p>
+            <label for="idata">Data</label>
+            <input type="date" name="data" id="idata" required>
+        </p>
+
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" id="isenha" name="senha" required  placeholder="digite a sua senha">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

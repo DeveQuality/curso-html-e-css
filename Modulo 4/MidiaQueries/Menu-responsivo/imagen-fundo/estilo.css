@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url(../imagen-fundo/pexels-sebastians-750225.jpg); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+header h1{
+    font-family: cursive;
+    color: white;
+    margin-top: 10vh;
+    margin-left: 10vh;
+    text-shadow: 4px 4px 4px rgb(240, 159, 61);
+}
+
+a{
+    background-color: rgb(139, 105, 63);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-family: cursive;
+    font-size: 1.5vh;
+    border-radius: 10px;
+    
+}
+a:hover{
+    background-color: rgb(173, 143, 104);
+}
+ul{
+    width: auto;
+    display: flex;
+    gap: 19px;         /* Espaço entre os itens */
+    list-style: none;  /* Remove as bolinhas */
+    padding: 10px 20px;
+    margin:0;
+    justify-content: flex-end; /* Alinha à direita */
+
+}
+img#icon-menu{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+img#icon-menu:hover{
+    background-color:rgba(224, 187, 168, 0.612);
+    border-radius: 10px;
+    
+}
+
+main {
+    background-color: rgba(231, 207, 177, 0.5);   /* cor com transparência */
+    font-size: 1.2em;
+    font-family: cursive;
+    color: black;
+    border-radius: 8px;
+    padding: 20px;
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+main p{
+    text-indent: 20px;
+    font-size:1.5vh;
+}
+main h1,h2{
+    font-size: 2.5vh;
+}

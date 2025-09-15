@@ -1,0 +1,8 @@
+article#noticia-principal p.texto{
+    font-size: 13pt;
+    color: #4d4a4a;
+    background-color:rgb(224, 211, 211);
+    border-radius: 10pt;
+    padding: 5px 0px 5px 10px;                  /*formataçao do texto dentro da section artigo*/
+    margin: 10px;
+}

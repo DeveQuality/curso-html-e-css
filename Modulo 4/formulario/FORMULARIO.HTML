@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>preenchendo um formulario</title>
+    <style>
+        h1{
+            font-weight:lighter;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        body{
+            
+            background-color: rgb(240, 162, 67);
+        }
+        p{
+            padding: 10px;
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+        div>p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        div{
+            background-color: rgb(206, 158, 95);
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            border-radius: 50px;
+            text-align: center;
+        }
+        input{
+            border: none;
+            border-radius: 10px;
+            color: blue;
+            padding: 4px;
+        }
+        button{
+            border-radius: 5px;
+            padding: 5px;
+            border: none;
+        }
+        button:hover{
+            background-color: yellow;
+            color: white;
+        }
+
+        button>a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        footer{
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Inscrições abertas <br>Inscreva-se no formulario a baixo 👇</h1>
+    <div>
+        
+        <p> <label for="inome">nome</label> <input type="text" name="nome" id="inome"></p>
+        <p> <label for="isobrenome">sobrenome</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p> <label for="ie-mail">e-mail</label> <input type="email" name="e-mail" id="ie-mail"></p>
+        <p> <label for="ipassword">senha</label> <input type="password" name="password" id="ipassword"></p>
+
+        <p><button><a href="">submeter</a></button></p>
+
+        esqueceu a senha 😔? <a href="">clique aqui</a>
+
+    </div>
+    <footer>criado por-<a href="">bernardosumbane160</a></footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cadastro.php" method="post">
+
+        <p><label for="inome"> Nome</label>       <input type="text" name="nome" id="inome" required minlength="5">         </p>
+        
+        <p> <label for="isenha">Senha</label>     <input type="password" name="senha" id="isenha" required maxlength="6">   </p>
+
+        <p><input type="submit" value="enviar"></p>
+        <p><input type="reset" value="limpar"></p>
+
+    </form>
+</body>
+</html>
+
+<!--* podemos usar o atributo "required" para tornar o campo obrigatório, e o atributo "minlength" para definir o número mínimo de caracteres que o usuário deve digitar. 
+    * O atributo "maxlength" define o número máximo de caracteres que o usuário pode digitar. -->

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+        fieldset>legend{
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #000000;
+            background-color: #b2abab;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        fieldset{
+            border: 2px black solid;
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+            background-color: rgb(114, 114, 114);
+            color: white;
+
+        }
+        fieldset>label{
+            transition: 1.5s;
+            display: block;
+            margin: 10px 0;
+            font-size: 1.2em;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="post">
+        <fieldset>
+            <legend>Series favoritas</legend>
+            <label for="iacao"><input type="radio" name="serie" id="iacao" checked>Acao <br></label>
+            <label for="iavent"><input type="radio" name="serie" id="iavent">Aventura<br></label>
+            <label for="icomed"><input type="radio" name="serie" id="icomed">Comedia<br></label>
+            <label for="iterr"><input type="radio" name="serie" id="iterr">terror<br></label>
+            <label for="isusp"><input type="radio" name="serie" id="isusp">Suspense<br></label>
+            <label for="ianime"><input type="radio" name="serie" id="ianime">Anime<br></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="imasc"><input type="radio" name="sexo" id="imasc">Masculino</label>
+            <label for="ifem"><input type="radio" name="sexo" id="ifem"   checked>Femenino</label>
+        </fieldset>
+        <p><input type="submit" value="submeter">
+            <input type="reset" value="limpar"></p>
+    </form>
+</body>
+</html>

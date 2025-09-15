@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* ORIENTACAO PARA MEDIA SCREEN:ORIENTATION (MODO RETRATO) */
+body {
+    background: url('../imagens/cev-portrait.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

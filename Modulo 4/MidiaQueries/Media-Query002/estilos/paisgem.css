@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* ORIENTACAO PARA MEDIA SCREEN:ORIENTATION (MODO PAISAGEM) */
+body {
+    background-image:url('../imagens/cev-landscape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

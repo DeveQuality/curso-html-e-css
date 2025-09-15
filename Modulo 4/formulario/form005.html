@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando o <select> </title>
+</head>
+<body>
+    <h1>Criando formulario usando o select</h1>
+    <label for="iselecionsar">Sexo</label>
+    <select name="selecionar" id="iselecionsar">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+        <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+    </select> 
+
+    <p>
+        <label for="itexto">profissao</label>
+        <input type="text" name="texto" id="itexto" list="profissoes" placeholder="Digite sua profissão" required>
+        <datalist id="profissoes"   >
+            <option value="Programador"></option>
+            <option value="Designer"></option>
+            <option value="Gerente de Projetos"></option>
+            <option value="Analista de Sistemas"></option>
+            <option value="Engenheiro de Software"></option>
+            <option value="Arquiteto de Soluções"></option>
+            <option value="Cientista de Dados"></option>
+            <option value="Especialista em Segurança da Informação"></option>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="texto">Mesagem</label><br>
+        <textarea name="areadetexto" id="texto" cols="30" rows="10">sua mensagem...</textarea>
+    </p>
+    <p><input type="reset" value="limpar"></p>
+    <p><input type="submit" value="enviar"></p>
+</body>
+</html>

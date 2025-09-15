@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: cursive;
+    font-size: 1em;
+}
+header{
+    background-color: #4b8496;
+    height: 200px;
+}
+header>h1{
+    text-align: center;
+    color: white;
+}
+menu ul{
+    list-style-type: none;
+}
+menu li{
+    display:inline-block;                   /*   o display block serve para poder centralizar a lista */
+    padding: 5px;
+    background-color: rgb(57, 109, 187);
+    border-radius: 10px;
+    color: white;
+}
+article{
+    max-width: 800px;   /* Limite máximo */
+    width: 100%;        /* Ocupa toda a largura disponível */
+    margin: 10px auto;  /* Centraliza horizontalmente */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #1a95ce;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando javascript</title>
+
+    <script>
+        function acendelampada() {
+            document.getElementById("luz").src = "_imagens/lampada-acesa.jpg" ;
+        }
+        function apagalampada() {
+            document.getElementById("luz").src = "_imagens/lampada-apagada.jpg" ;
+        }
+        function quebralampada(){
+            document.getElementById("luz").src = "_imagens/lampada-quebrada.jpg" ;
+        }
+    </script>
+</head>
+<style>
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+    body h1{
+        text-decoration: underline;
+        color: rgb(187, 157, 22);
+    }
+    section {
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
+        box-shadow: 5px 6px 7px  rgb(255, 145, 0);
+    }
+    
+</style>
+<body>
+    <section>
+        <h1>
+        Eventos com a lampada
+        </h1>
+        <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendelampada()" onmouseout="apagalampada()" onclick="quebralampada()">
+        </section>
+</body>
+</html>

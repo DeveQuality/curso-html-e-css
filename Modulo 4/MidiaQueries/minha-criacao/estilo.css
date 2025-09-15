@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url(pexels-katieburandt-1212693.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}   
+  
+header{
+    background-color: black;
+}
+
+header>h1{
+    color: white;
+    padding: 20px;
+    padding-top: 35px;
+    font-family: cursive;
+ }
+
+ul{
+    width: auto;
+    display: flex;
+    gap: 19px;         /* Espaço entre os itens */
+    list-style: none;  /* Remove as bolinhas */
+    padding: 10px 20px;
+    margin:0;
+    justify-content: flex-end; /* Alinha à direita */
+        
+}
+
+li>a{
+    color: white;
+    text-decoration: none;
+}
+
+li>a:hover{
+    background-color: rgba(143, 254, 147, 0.46);
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+fieldset{
+    background-color: rgba(50, 52, 46, 0.39) ;
+    color: white;
+    width: 50vw;
+    max-width:100%;
+    margin: auto;
+    border-radius: 10px;
+    border-color:  rgba(246, 168, 0, 0.998);
+    padding: 50px;
+    margin-top: 30px;
+    font-family: cursive;
+
+    backdrop-filter: blur(5px);                 /* isso  é para dar um efeito de desfoque no fundo */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+fieldset >legend{
+    background-color: rgba(246, 168, 0, 0.998);
+    font-size: 1em;
+    padding: 4px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border-radius: 10px
+}
+
+label{
+    color: rgb(255, 255, 255);
+    font-size:1.2em;
+    font-weight: bold;
+    padding: 10px;   
+}
+input{
+    border-color:  rgba(246, 168, 0, 0.998);
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
+}
+#botao{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    margin-top: 10px;
+}
+a#senha{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#aside img{
+    display: none;
+}
+    
+
+@media screen and (min-width:600px){
+
+        .form-container{
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #aside img{
+        max-width: 300px;
+        border-radius: 10px;
+        display: block;
+        height: auto;
+    }
+
+    fieldset{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

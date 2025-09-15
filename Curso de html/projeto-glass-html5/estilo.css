@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Fontelogo';                                       /*a fonte nao esta em fucionamento*/
+    scr: url("_fonts/bubblegum-sans-regular.otf")
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right,#E65763 , #34073D);
+    color: rgb(255, 255, 255);
+}
+
+div#interfase{
+    width: 1060px;
+    background-image: linear-gradient(to right,#544657,#E65763 );
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgb(158, 38, 38);
+    padding: 10px;
+}
+
+header#cabecalho{
+    border-bottom: 2px black solid;             /*uma linha preta*/
+    height: 150px;
+    
+}
+header#cabecalho img#logo{                      /*editar a imagem glass*/
+    position: absolute;
+    top:110px ;
+}
+header#cabecalho h1{                            /*ediçao de todo titulo h1*/
+    font-family:Arial, Helvetica, sans-serif Arial;
+    font-size: 30px;
+    color: rgb(207, 192, 192);
+}
+header#cabecalho h2{                            /*editando todo titulo h2 */
+    font-family: 'Courier New', Courier, monospace;
+    color: #888888;
+    font-size: 15pt;
+}
+
+p {
+    text-align:justify;
+    text-indent: 50px;     /*um espaço de 50px antes do paragrafo*/
+}
+
+a {
+    text-decoration: none;
+    color: rgb(155, 197, 202);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header#cabecalho  img#icone {
+    position: absolute;
+    left: 990px;
+    top:60px ;
+
+}
+/* Formataçao de imagens com legendas */
+
+figure.foto-legenda{            /* editando a classe foto-legenda*/
+    position: relative;
+    border: 8px solid rgb(134, 69, 69);  /* bordas na foto de cor rgb*/
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img{    /*para tudo que seja imagem*/
+    width: 100% ;            /*largura da imagem*/
+    height: 100%;              /*altura da imagem*/
+}
+
+figure.foto-legenda figcaption{   /*editando o figcaption*/
+    opacity: 0 ;
+    position: absolute;
+    top: 0px; 
+    background-color:rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{                 /*passando o mouse apareça o efeito*/
+    opacity: 1;
+}
+
+/*formataçao do menu*/
+nav#menu {
+    display: flex;                                   /*o blocos estao em blocos */
+    flex-direction: row;
+}
+
+nav#menu ul{                                           /*para editar a lista do menu*/
+    list-style: none;                                /*tira os pontinhos que tinha na frente dos menus */
+    /*text-transform: uppercase;*/                      /*coloca todos os textos do menu maiosculas*/
+    position: absolute;                              /*para que possa se movimentar na tela*/ 
+    top: -20px;                                     /*vovimenta para cima ou para baixo o nav*/     
+    left: 500px;                                        /*movimenta para esquerda ou direita o nav */
+}
+
+nav#menu li{
+    display: inline-block;                          /*deixa o texto do menu em fila*/
+    background-color: rgb(218, 118, 148);
+    padding: 7px;                                    /*o tamanho da caixa com o texto dentro*/
+    margin: 10px;                                    /*o espaçamento entre os botoes do menu*/
+    transition: 1s;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px pink;
+    flex-wrap: wrap;
+}
+
+nav#menu li:hover{
+    background-color: #ffffff;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: rgb(173, 38, 79);                        /*ao passar o mouse o texto fica com a cor preta*/  
+}
+
+/*Formataçao do section*/
+
+section#corpo {
+    display: block;                             /*para ser mostrada como um bloco*/
+    width: 600px;                               /*a largura do bloco*/
+    float: left  ;                               /*o bloco de palavras vai flutuar a esquerda*/
+    border-right: 2px solid black;               /*linha preta  horizontal*/
+    padding: 10px;                                 /*espaçamento do texto e a linha*/
+    border-radius: 10px;                             /*curvas na section*/
+}
+
+/*formataçao do article*/
+
+article#noticia-principal h2{
+    font-size: 13pt;
+    color: #4d4a4a;
+    background-color:rgb(224, 211, 211);
+    border-radius: 10pt;
+    padding: 5px 0px 5px 10px;                  /*formataçao do texto dentro da section artigo*/
+    margin: 10px;
+}
+
+header#cabeçalho-artigo h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+    color: #918383;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.direita{
+    text-align: right;
+}
+
+header#cabeçalho-artigo h2{
+    font-size: 13pt;
+    color: #9b9494;
+    background: none;
+    margin: 0px;
+}
+header#cabeçalho-artigo h3{
+    font-size: 15px;
+    color: #000000;
+}
+
+/*formataçao de tabelas em html*/
+
+table#tabelaspec{                           /*tabela ao redor das td e tr*/
+    border: 2px solid rgb(51, 44, 44);
+    border-spacing: 0px;                    /*tira todas linhas dentro da tabela */
+    margin-left: auto;
+    margin-right:auto ;
+
+}
+
+table#tabelaspec td{                          /*linhas dentro da tabela*/
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+table#tabelaspec  td{                          /*as palavras dentro das tabelas grandes vao pra o topo*/
+    vertical-align: top;
+}
+
+/*formataçao das cores da tabela*/
+
+table#tabelaspec td.ce {                    /*ce significa celula da esquerda*/
+    color: #ffffff;
+    background-color: #606060;
+    font-weight: bold;
+
+}
+
+table#tabelaspec td.cd {                    /*cd significa celula da direita*/
+    color: rgb(0, 0, 0);
+    background-color: #888888;
+}
+table#tabelaspec caption {
+    color: #888484;
+    font-size: 20px;
+    font-weight: bold;
+}
+table#tabelaspec caption span {
+    color: black;
+    display: block;
+    float: right;
+    margin-top: 10px;
+    font-size: 10pt;
+}
+
+/*Formataçao do aside*/
+
+aside#lateral {
+    display: block;
+    width: 400px;
+    float:right;        /*o bloco de palavras vai flutuar a direita*/
+    padding: 10px;
+    background-color: #923e3e;
+    border-radius: 26px;
+    margin-top: 18px;
+    box-shadow: 3px 4px 5px rgb(172, 127, 127);
+}
+
+aside#lateral h1 {
+    font-family:  'Courier New', Courier, monospace;
+    font-size: 20pt;
+    color: #aaa9a9;
+}
+
+aside#lateral h2 {
+    background-color:rgb(224, 211, 211);
+    color:rgb(224, 211, 211);
+    border-radius: 5px;
+    color: #4d4a4a;
+    font-size: 13pt;
+    padding: 5px 0px 5px 10px;
+    margin: 10px;
+}
+
+/*Formataçao do footer*/
+
+footer#rodape {
+    text-align: center;
+    clear: both;
+    border-top: 2px black solid;
+}

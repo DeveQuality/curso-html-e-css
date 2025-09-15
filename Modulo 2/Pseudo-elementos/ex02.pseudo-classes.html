@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+
+        body{
+            background-color: rgb(155, 155, 234);
+            font-family: cursive;
+            text-align: center;
+        }
+        div{
+            color: white;
+        }
+        div > p {              /*  o div > p significa que o p é filho da div */ 
+            display: none;
+        }
+        div:hover  >p {
+            display: block;
+        }
+        div:hover{
+            color: rgb(4, 16, 255);
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Exemplo de hover com html 5</h2> 
+    <p>Sera que serei um programador? Se sim passe o mouse abaixo↓ </p>
+    <div id="container2">
+        Passe o mouse aqui...
+        <p>É claro que sim nem  kkkk😋</p>
+    </div>
+    <p>Entao me apoie... </p>
+
+</body>
+</html>
