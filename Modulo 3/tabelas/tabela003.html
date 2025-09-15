@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body{
+            background-color: tan;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        table{
+            border-collapse:collapse;
+            width: 360px;
+            margin: auto;
+        }
+        td{
+            border:1px solid black;
+            padding: 10px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de celulas</h1>
+    
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2" style="background-color: white; font-weight: bold" >B</td>         <!-- colspan significa expansao em linha -->
+        </tr>
+
+        <tr>
+            <td rowspan="3" style="background-color: rgb(222, 163, 163); font-weight: bold">D</td>    <!-- rowspan significa expansao em coluna -->
+            <td>E</td>
+            <td rowspan="2" style="background-color: aqua; font-weight: bold;">F</td>
+        </tr>
+
+        <tr>
+            <td>H</td>
+        </tr>
+
+        <tr>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+</body>
+</html>

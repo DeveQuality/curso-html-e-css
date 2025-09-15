@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito</title>
+    <style>
+        body{
+            background-color: rgb(225, 177, 118);
+        }
+        .spiner{
+            background-color: orangered;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 25px solid  bisque;
+            border-top: 20px solid indigo;
+            animation: ani 2.5s linear infinite;
+        }
+        @keyframes ani{
+            to{
+            transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Efeito</h1>
+
+    <div class="spiner"></div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables with HTML</title>
+    <style>
+        body{
+            background-color: rgb(150, 123, 90);
+            font-family:cursive;
+            text-align: center;
+        }
+        table{
+            width: 500px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        td , th{
+            border: 1px solid black;
+        }
+        col.cnome{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Creating tables with HTML</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th> 
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Maria Helena</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Contabilista</td>
+        </tr>
+        <tr>
+            <td>Benny</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Software enginner</td>
+        </tr>
+        <tr>
+            <td>Flora</td>
+            <td>F</td>
+            <td>47</td>
+            <td>Modista</td>
+        </tr>
+        <tr>
+            <td>Jose</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Electreista</td>
+        </tr>
+
+    </table>
+</body>
+</html>

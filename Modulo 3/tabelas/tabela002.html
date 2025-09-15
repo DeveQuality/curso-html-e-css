@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables with html</title>
+    <style>
+        body{
+            background-color: rgb(217, 166, 105);
+            font-family: arial;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;    /* juntas as bordas da tabela */
+            position:relative;
+        }
+        th,td{
+            border: 1px solid black;
+            padding:10px ;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(95, 81, 63, 0.708);
+        }
+        thead,tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th{
+            position:sticky;    /* o sticky significa colavel */
+            top:-1px;
+            background-color:gray;
+        }
+         tbody > tr:nth-child(2n){             /*efeito zebrado- saltar tres linhas e pintar com uma co */
+            background-color:aquamarine ;
+        }
+        td.num{
+            text-align: right
+        }
+    </style>
+</head>
+<body> 
+    <h1>
+        Using tables with html      
+    </h1>
+
+    <!-- ORGANIZATION OF THE TABLES
+
+    1-head (tr,td,th)
+    2-body (tr,td,th)
+    3-footer (tr,td,th)
+
+    td- dados em tabela
+    th- titulo em tabela
+
+    -->
+
+    <table>
+        <caption>Mozanbique Populacion</caption>      <!-- titulo da tabela -->
+        <thead>
+            <tr>
+                <th scope="col">Estate</th>
+                <th scope="col" style="width: 50px;">Populacion</th>         
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Cidade de Maputo</td>
+                <td class="num">1 178 116</td>
+            </tr>
+            <tr>
+                <td>Maputo</td>
+                <td class="num">19 049</td>
+            </tr>
+            <tr>
+                <td>Inhanbane</td>
+                <td class="num">55 234</td>
+            </tr>
+            <tr>
+                <td>Zanbezia</td>
+                <td class="num">33 222</td>
+            </tr>
+            <tr>
+                <td>Gaza</td>
+                <td class="num">34 334</td>
+            </tr>
+            <tr>
+                <td>Beira</td>
+                <td class="num">44 999</td>
+            </tr>
+            <tr>
+                <td>Manica</td>
+                <td class="num">32 556</td>
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td class="num">457 556</td>
+            </tr>
+            <tr>
+                <td>Cabo Delgado</td>
+                <td class="num">12 687</td>
+            </tr>
+            <tr>
+                <td>Tete</td>
+                <td class="num">188 964</td>
+            </tr>
+            <tr>
+                <td>Nampula</td>
+                <td class="num">224 553</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row ">total habitants</th>
+                <td>234.456.322.344</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
