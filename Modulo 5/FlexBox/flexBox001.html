@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            padding: 10px;
+
+
+            display: flex;          /* faz as divs estarem em fila */
+        }
+        div.item{
+            background-color: rgb(255, 255, 255);
+            border: 5px solid rgb(81, 3, 3);
+            border-radius: 10px;
+            text-align: center;
+            font-family: cursive;
+            padding: 10px;
+            margin: 5px;
+
+            flex: auto;      /* faz com que as divs filhos se adaptem a tela */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Amor</div>
+        <div class="item">Carinho</div>
+        <div class="item">Paixao</div>
+        <div class="item">Sorriso</div>
+        <div class="item">Odio</div>
+        <div class="item">Raiva</div>
+        <div class="item">Duvida</div>
+    </div>
+</body>
+</html>

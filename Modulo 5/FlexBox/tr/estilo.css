@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color:bisque;
+}
+header{
+    background-color: black;
+    color: white;
+}
+header>h1{
+    color: rgb(224, 84, 34);
+    font-family: cursive;
+    font-size: 1.3em;
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgb(79, 72, 70);
+}
+header>h1:hover{
+    text-decoration: underline;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    justify-content: end;               /* ele coloca os itens no fim */
+}
+li{
+    list-style: none;
+    margin: 5px;
+}
+li>a{
+    color: white;
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 0.8em;
+}
+li>a:hover{
+    background-color:bisque ;
+    color: black;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 1s;
+    margin: 5px;
+}
+section>p{
+    padding: 10px;
+    font-family: cursive;
+}
+div>video{
+    width: 90%;
+    margin: 10px;
+    border-radius: 10px;
+}
+section>a{
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 0.9em;
+    padding: 4px;
+    background-color: black;
+    color: rgb(224, 84, 34);
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+section>a:hover{
+    background-color: white;
+    color: rgb(22, 41, 215);
+}

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        body{
+            background-color: rgb(99, 97, 97);
+        }
+        div.container{
+            background-color: rgb(29, 175, 219);
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+
+            flex-flow: row wrap;     /* isso resume o fle-direction e o flex-wrap */
+
+
+            display: flex;             /* faz as divs estarem em fila */
+            /*  flex-direction: row;                                    */
+
+
+            
+            /* flex-wrap:nowrap;           faz o texto se adaptar dentro da div sem quebrar */
+
+            /*  flex-wrap:wrap ;   faz as div quebrarem de linha */
+        }
+        div.item{
+            background-color: rgb(255, 255, 255);
+            border: 5px solid rgb(35, 10, 117);
+            border-radius: 10px;
+            text-align: center;
+            font-family: cursive;
+            padding: 10px;
+            margin: 10px;
+            flex: auto;                 /* muito bro pra uma organizacao automatica */
+
+        }
+         div.item:hover{
+            background-color: blue;
+            color: white;
+            transition: 1s;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Eu Tenho Amor</div>
+        <div class="item">Eu Tenho Carinho</div>
+        <div class="item">Eu Tenho Paixao</div>
+        <div class="item">Eu Tenho Sorriso</div>
+        <div class="item">Eu Tenho Odio</div>
+        <div class="item">Eu Tenho Raiva</div>
+        <div class="item">Eu Tenho Duvida</div>
+    </div>
+</body>
+</html>
