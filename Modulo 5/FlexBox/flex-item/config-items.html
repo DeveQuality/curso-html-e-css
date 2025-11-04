@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            padding: 10px;
+
+
+            display: flex;          /* faz as divs estarem em fila */
+            flex-flow:row wrap;   /* permite que as divs filhos quebrem a linha quando nao houver mais espaco na tela */
+        }
+        div.item{
+            background-color: rgb(255, 255, 255);
+            border: 5px solid rgb(81, 3, 3);
+            border-radius: 10px;
+            text-align: center;
+            font-family: cursive;
+            padding: 10px;
+            margin: 5px;
+
+        }
+        div#i1{
+            order:8;
+        }
+        div#i2{
+            order:7;
+        }
+        div#i3{
+            order:6;
+        }
+        div#i4{
+            order:5;
+        }
+        div#i5{
+            order:4;
+        }
+        div#i6{
+            order:3;
+        }
+        div#i7{
+            order:2;
+        }
+        div#i8{
+            order:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">O</div>
+        <div class="item" id="i2">D</div>
+        <div class="item" id="i3">R</div>
+        <div class="item" id="i4">A</div>
+        <div class="item" id="i5">N</div>
+        <div class="item" id="i6">R</div>
+        <div class="item" id="i7">E</div>
+        <div class="item" id="i8">B</div>
+    </div>
+</body>
+</html>
