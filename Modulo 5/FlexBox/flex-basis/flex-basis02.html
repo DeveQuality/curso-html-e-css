@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.container{
+            background-color: rgba(188, 10, 10, 0.72);
+            padding: 10px;
+
+            display: flex;
+            flex-flow:row nowrap;
+
+        }
+        div.item{
+            background-color: rgb(255, 255, 255);
+            border: 5px solid rgb(81, 3, 3);
+            border-radius: 20%;
+            text-align: center;
+            font-family: cursive;
+            padding: 10px;
+            margin: 5px;
+
+
+            flex-basis:200px;
+        }
+
+        div#primeiro{
+            flex-shrink:1 ;
+            flex-grow: 2;
+        }
+
+        div#segundo{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        div#terceiro{
+            flex-shrink:2 ;
+            flex-grow: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="primeiro">B</div>
+        <div class="item" id="segundo">A</div>
+        <div class="item" id="terceiro">S</div>
+    </div>
+</body>
+</html>
