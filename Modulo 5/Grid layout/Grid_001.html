@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout na pratica</title>
+    <style>
+        body{
+            background-color: rgb(124, 53, 191);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        div.container{
+            border: 2px solid yellow;
+            border-radius: 10px;
+            height: 350px;
+            padding: 5px;
+
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px;
+        }
+        div.item{
+            border: 2px solid white;
+            border-radius: 10px;
+            text-align: center ;
+            background-color: rgba(103, 151, 193, 0.608);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Escola</div>
+        <div class="item">Igreja</div>
+        <div class="item">Hospital</div>
+        <div class="item">Casa</div>
+        <div class="item">Trabalho</div>
+        <div class="item">Quarto</div>
+        <div class="item">Jantar</div>
+    </div>
+    
+</body>
+</html>
