@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>texto com imagen no background </title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        h1{
+            margin-top: 60px;
+            font-family:cursive;
+            font-size: 5em;
+            background-image: url(IMG_20231101_155500.jpg);
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+            animation: animate 20s linear infinite;
+            border-color: rgb(255, 255, 255);
+        }
+        @keyframes animate{
+            to{
+                background-position-x:-500px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Bernardo Arnaldo Sumbane</h1>
+</body>
+</html>
