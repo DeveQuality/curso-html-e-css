@@ -8,6 +8,7 @@ body{
 header{
     background-color: black;
     color: white;
+    padding-top: 20px;
 }
 header>h1{
     color: rgb(224, 84, 34);

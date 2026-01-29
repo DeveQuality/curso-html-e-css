@@ -10,11 +10,22 @@ body{
     );
      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-h1{
+header>h1{
     text-align: center;
     color:  rgba(225, 9, 124, 0.772);
     padding-top: 50px;
     font-size: 2em;
+}
+header>p{
+    font-family: cursive;
+    color: white;
+}
+
+hr{
+    border: none;
+    background-color:rgba(225, 9, 124, 0.772);
+    height: 5px;
+    margin: 10px;
 }
 p{
     font-size: 1.2em;
