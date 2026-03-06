@@ -1,0 +1,24 @@
+:root{
+  --fundo-principal:#F4F7F6;
+  --texto:#2C3E50;
+  --botao:#2ECC71;
+  --hover:#27AE60;
+  --destaque:#FFFFFF;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--fundo-principal);
+}
+.section .card-content {
+    background-color: var(--destaque);
+    color: var(--texto);
+    font-weight: bold;
+}
+.media-content .texto{
+    border-radius: 9px;
+    width: 200px;
+    font-size: 1.2em;
+    color: var(--texto);
+    background-color: var(--destaque);
+}

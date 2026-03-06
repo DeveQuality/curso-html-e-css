@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a portifolio with bulma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/80c412925b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+            <h1 class="title">Meu Portifolio</h1>
+            <h2 class="subtitle">Dev Quality</h2>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+            <a class="navbar-item">
+                Home
+            </a>
+
+            <a class="navbar-item">
+                Documentation
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                More
+                </a>
+
+                <div class="navbar-dropdown">
+                <a class="navbar-item">
+                    About
+                </a>
+                <a class="navbar-item is-selected">
+                    Jobs
+                </a>
+                <a class="navbar-item">
+                    Contact
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                    Report an issue
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav> 
+    <section class="section">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                <img
+                    src="https://bulma.io/assets/images/placeholders/1280x960.png"
+                    alt="Placeholder image"
+                />
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img
+                                src="https://bulma.io/assets/images/placeholders/96x96.png"
+                                alt="Placeholder image"
+                            />
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4 ">Bernardo Sumbane</p>
+                        <p class="subtitle is-6">Dev quality</p>
+                        <p class="texto"> <i class="fa-solid fa-code"></i> Web developer</p>
+
+
+                    </div>
+                </div>
+
+                <div class="content">
+                <p class="text">
+                    cont: <br>
+                    +258 8467 123 76 <br>
+                    +258 8416 901 83 <br>
+
+                    email:  <br>
+                    bernardosumabne160@gmail.com <br>
+
+                    <div class="sociais">
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-square-github"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+
+                </p>
+                <br />
+                <time datetime="2026-2-23">11:30 AM - 23 Fev 2026</time>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
